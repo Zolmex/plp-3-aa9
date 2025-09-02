@@ -1,0 +1,16 @@
+@import url("generic.css");
+
+header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+}
+
+header * {
+    margin: 0px;
+    border: 1px black solid;
+    border-collapse: collapse;
+}
+
+.btn-no-bg {
+    background: none;
+}
