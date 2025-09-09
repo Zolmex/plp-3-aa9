@@ -1,0 +1,246 @@
+@import url(generic.css);
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    background: #ffffff;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+}
+
+/* TITULO DE PAGINA */
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.titulo h1 {
+    font-size: 220%;
+    margin: 0;
+    font-weight: normal;
+    color: #f1f2f0;
+}
+
+.titulo p {
+    margin: 0;
+    font-size: 75%;
+    color: #bfc7bf;
+}
+
+/* NAVEGACION */
+
+header {
+    background-color: #1f2424;
+    color: #dfe6df;
+    padding-top: 10px;
+    padding-inline: 15px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main-nav {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.main-nav a {
+    color: #cfd6cd;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.08);
+    font-size: 95%;
+}
+
+.main-nav a.active { /* boton de navegacion seleccionado */
+    background: rgba(120, 140, 30, 0.9);
+    color: #ffffff;
+}
+
+.accent-line {
+    width: 100%;
+    height: 5px;
+    background-color: #9fbf19;
+    margin-top: 10px;
+}
+
+.banner-content {
+    display: grid;
+    grid-template-columns: 48% 52%;
+    gap: 2%;
+    align-items: center;
+    background: #4b4b4b;
+    padding: 2.5rem 4%;
+    color: #f3f3f3;
+}
+
+.banner-content .left {
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-content .left img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border: 8px solid rgba(255, 255, 255, 0.15);
+}
+
+.banner-content .right h2 {
+    font-size: 240%;
+    margin: 0 0 0.6rem 0;
+    color: white;
+    font-weight: bold;
+    line-height: 1.05;
+}
+
+.banner-content .right p.lead {
+    font-size: 110%;
+    color: #d1d3d3;
+    margin: 0 0 1.2rem 0;
+}
+
+.banner-content .right .cta {
+    display: inline-block;
+    padding: 0.6rem 1rem;
+    background: #bcd438;
+    color: #0b0b0b;
+    text-decoration: none;
+    border-radius: 0.4rem;
+    font-weight: bold;
+    font-size: 95%;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 2.5rem;
+    padding: 3rem 4%;
+    background: #fff;
+    flex: 1 0 auto;
+}
+
+.content {
+    max-width: 800px;
+}
+
+.content h3 {
+    font-size: 140%;
+    margin: 0 0 0.8rem 0;
+    color: #222;
+    font-weight: bold;
+}
+
+.underline {
+    height: 0.45rem;
+    width: 60px;
+    background: #c7d43a;
+    margin: 0.6rem 0 1.2rem 0;
+}
+
+.content p {
+    color: #6f6f6f;
+    margin-bottom: 1rem;
+    font-size: 95%;
+}
+
+.list {
+    margin: 0px;
+    padding-left: 20px;
+    color: #666;
+}
+
+aside {
+    background-color: #f6f6f6;
+    padding: 15px;
+}
+
+.titulo-noticias {
+    background: #333;
+    color: #fff;
+    padding: 0.6rem;
+    font-size: 95%;
+    font-weight: bold;
+    margin: -1rem -1rem 1rem -1rem;
+}
+
+.news-item {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    gap: 0.6rem;
+    align-items: center;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.news-item img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    display: block;
+    background: #ddd;
+}
+
+.news-item h4 {
+    margin: 0;
+    font-size: 95%;
+    color: #222;
+    font-weight: bold;
+}
+
+.news-item p {
+    margin: 0.2rem 0 0 0;
+    font-size: 85%;
+    color: #666;
+}
+
+/* Footer */
+footer {
+    background-color: #232423;
+    color: #c9cdc6;
+    padding: 2rem 4%;
+    border-top: 0.5rem solid #c7d43a;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+.footer-grid h5 {
+    margin: 0 0 0.6rem 0;
+    font-size: 95%;
+    color: #f2f2f2;
+    font-weight: bold;
+}
+
+.footer-grid ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #bfbfbf;
+}
+
+.footer-grid li {
+    margin-bottom: 0.6rem;
+    font-size: 85%;
+}
+
+.copyright {
+    font-size: 85%;
+    color: #9b9b9b;
+    text-align: left;
+}
